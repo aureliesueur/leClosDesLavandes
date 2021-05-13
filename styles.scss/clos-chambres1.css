@@ -1,5 +1,6 @@
+/* GENERAL PAGE */
 body {
-  font-family: "Open Sans", Verdana, Arial, sans-serif;
+  font-family: "Poppins", "Montserrat", Verdana, sans-serif;
   font-size: 0.8em;
 }
 
@@ -13,12 +14,14 @@ section {
   align-items: flex-start;
 }
 
+/* BANDEAUX LATERAUX */
 .bandeau {
   background-color: #6c647e;
   width: 70px;
   height: 1000px;
 }
 
+/* LISTE DES CHAMBRES */
 .chambres {
   display: flex;
   flex-direction: column;
@@ -37,12 +40,12 @@ section {
   margin: 0 30px 30px 30px;
 }
 
+/* CARTE CHAMBRE INDIVIDUELLE */
 .chambre {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: "Poppins", "Montserrat", Verdana, sans-serif;
 }
 .chambre__img {
   border: 2px solid black;

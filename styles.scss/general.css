@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/*Visuel de l'entête*/
+/* MENU */
 header {
   background-image: url("../images/champs2.jpg");
   height: 200px;
@@ -53,6 +52,7 @@ header {
   display: none;
 }
 
+/* PIED DE PAGE */
 .footer {
   margin-top: 30px;
   padding: 20px;
