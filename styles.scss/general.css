@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*Visuel de l'entête*/
+header {
+  background-image: url("../images/champs2.jpg");
+  height: 200px;
+  font-family: "Poppins", "Montserrat", Verdana, sans-serif;
+}
+
+#logo {
+  display: block;
+  margin: auto;
+}
+
+.menu {
+  border: 2px solid #FFF;
+  box-shadow: #503f6e 6px 6px 10px;
+}
+.menu__item {
+  font-size: 1.4em;
+  margin-left: 30px;
+  display: inline-flex;
+}
+.menu__item a {
+  position: relative;
+  color: black !important;
+}
+.menu__item a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0) scaleY(0);
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #FFF;
+  transition: transform 250ms;
+}
+.menu__item a:hover {
+  color: white !important;
+}
+.menu__item a:hover::after {
+  transform: translateX(-50%) scaleX(1) scaleY(0.3);
+}
+.menu__sousmenu {
+  background-color: #c7c6c8;
+}
+.menu__sousmenu a:hover {
+  background-color: #c7c6c8;
+  color: #FFF;
+}
+.menu__sousmenu a::after {
+  display: none;
+}
+
+.footer {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #000;
+  color: #FFF;
+}
+.footer__social {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.footer__links ul, .footer__coord ul {
+  list-style-type: none;
+  padding-left: 0 !important;
+}
+.footer__links a, .footer__coord a {
+  color: #c7c6c8;
+}
+.footer__links a:hover, .footer__coord a:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+.footer h3 {
+  color: #503f6e;
+  font-size: 1.5em;
+}
+.footer__img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* MEDIA QUERIES---------------------------------------------------------------------*/
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar-light {
+    background-color: #6c647e;
+    z-index: 2;
+  }
+
+  .menu a::after {
+    display: none;
+  }
+
+  .footer__img {
+    width: 15% !important;
+    height: auto !important;
+    padding: 0;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  .present {
+    margin: auto !important;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .present__citation {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .present__box {
+    min-width: 100%;
+    margin: auto !important;
+  }
+
+  #mas1 {
+    display: none;
+  }
+
+  #vuepiscine {
+    display: none;
+  }
+
+  #mas2 {
+    display: block;
+    margin: auto;
+    max-width: 40%;
+  }
+}
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE (orientation paysage)------------------------------*/
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE -----------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .navbar-light {
+    background-color: #6c647e;
+    z-index: 2;
+  }
+
+  .menu a::after {
+    display: none;
+  }
+
+  .footer__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center !important;
+  }
+
+  .footer__socialList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=general.css.map */

@@ -1,0 +1,169 @@
+$primarycolor: rgb(80,63,110);
+$secondarycolor: rgb(199,198,200);
+$tertiarycolor: rgb(108,100,126);
+$bluecolor: rgb(90,106,140);
+$greencolor: rgb(94,132,121);
+$redcolor: rgb(122,23,53);
+
+
+/*Visuel de l'entête*/
+header {
+    background-image: url("../images/champs2.jpg");
+    height: 200px;
+    font-family: "Poppins", "Montserrat", Verdana, sans-serif;
+
+}
+#logo {
+    display: block;
+    margin: auto;
+}
+
+.menu {
+    border:2px solid #FFF;
+    box-shadow:rgb(80,63,110) 6px 6px 10px;
+    &__item {
+        font-size: 1.4em;
+        margin-left: 30px;
+        display: inline-flex;
+        & a {
+            position: relative;
+            color:black!important;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%) scaleX(0) scaleY(0);
+                transform-origin: 50% 50%;
+                width: 100%;
+                height: 2px;
+                background-color: #FFF;
+                transition: transform 250ms;
+            }
+            &:hover{
+                color:white!important;  
+                &::after {
+                    transform: translateX(-50%) scaleX(1) scaleY(0.3);
+                  }  
+            }
+        }
+    }
+    &__sousmenu {
+        background-color: $secondarycolor;
+        & a:hover {
+            background-color: $secondarycolor;
+            color: #FFF; 
+        }
+        & a::after {
+            display: none;
+        }
+    }
+}
+
+.footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #000;
+    color: #FFF;
+    &__social {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    &__links ul, &__coord ul {
+        list-style-type: none;
+        padding-left: 0!important;
+    }
+    &__links a, &__coord a {
+        color: rgb(199,198,200);
+        &:hover {
+            font-weight: bold;
+            text-decoration: none;
+        }    
+    }
+    & h3 {
+        color: rgb(80,63,110);
+        font-size: 1.5em;
+    }
+    &__img {
+        object-fit: contain;
+    }
+
+}
+
+/* MEDIA QUERIES---------------------------------------------------------------------*/
+
+
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
+
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .navbar-light {
+        background-color: $tertiarycolor;
+        z-index: 2;
+    }
+    .menu a::after {
+        display: none;
+    }
+    .footer__img {
+        width: 15%!important;
+        height: auto!important;
+        padding: 0;
+
+        object-fit: contain;
+    }
+    .present {
+        margin: auto!important;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        &__citation {
+            margin-top: 30px; 
+            margin-bottom: 30px;
+        }
+        &__box {
+            min-width: 100%;
+            margin: auto!important;
+        }
+    }
+    #mas1 {
+        display: none;
+    }
+    #vuepiscine {
+        display: none;
+    }
+    #mas2 {
+        display: block;
+        margin: auto;
+        max-width: 40%;
+    }
+}
+
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE (orientation paysage)------------------------------*/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+}
+
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE -----------------------------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .navbar-light {
+        background-color: $tertiarycolor;
+        z-index: 2;
+    }
+    .menu a::after {
+        display: none;
+    }
+    .footer__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center!important;
+    }
+    .footer__socialList {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+    
+

@@ -1,0 +1,42 @@
+﻿
+.accueil {
+    background-image: url("champs1.jpg");
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+    &__text {
+        color: black;
+        font-family: "Bilbo Swash Caps", "Arizonia", "Tangerine", Verdana, sans-serif;
+        font-size: 40px;
+        font-stretch: expanded;
+        line-height: 130%;
+        text-align: center;
+    }
+
+    &__img {
+        border: 8px solid black;
+    }
+
+    &__btn {
+        border: 2px solid black;
+        border-radius: 4px;
+        margin-top: 20px;
+        height: 35px;
+        width: 120px;
+        color: rebeccapurple;
+        font-family: "Open Sans", Trebuchet, Verdana, sans-serif;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: bold;
+        transform: perspective(0px) rotateX(0deg) scale(1);
+        transition: all 500ms ease-in-out;
+        text-decoration: none;
+        &:hover {
+            transform: perspective(150px) rotateX(45deg) scale(1.5);
+        }
+    }
+}
+

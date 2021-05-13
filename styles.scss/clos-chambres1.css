@@ -1,0 +1,159 @@
+body {
+  font-family: "Open Sans", Verdana, Arial, sans-serif;
+  font-size: 0.8em;
+}
+
+section {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.bandeau {
+  background-color: #6c647e;
+  width: 70px;
+  height: 1000px;
+}
+
+.chambres {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.chambres__title {
+  font-family: "Kristi", "Bilbo Swash Caps", "Tangerine", Verdana, sans-serif;
+  font-size: 6em;
+}
+.chambres__item {
+  border: 2px solid black;
+  border-radius: 3px;
+  width: 80%;
+  padding: 0 15px;
+  margin: 0 30px 30px 30px;
+}
+
+.chambre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", "Montserrat", Verdana, sans-serif;
+}
+.chambre__img {
+  border: 2px solid black;
+  border-radius: 3px;
+}
+.chambre__title {
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+.chambre__description {
+  margin-left: 30px;
+  text-align: justify;
+  font-size: 1.2em;
+}
+.chambre__btn {
+  margin-left: 60%;
+  margin-bottom: 20px;
+  background-color: #6c647e;
+  border: 1px solid black;
+  border-radius: 2px;
+  font-size: 1.2em;
+  color: white;
+  transform: scale(1);
+  opacity: 0.8;
+  transition: all 500ms ease-in-out;
+}
+.chambre__btn:hover {
+  transform: scale(1.2, 1.2);
+  opacity: 1;
+}
+.chambre__btn a {
+  text-decoration: none;
+  color: white;
+}
+
+#title-bleu {
+  color: #5a6a8c;
+}
+
+#title-vert {
+  color: #5e8479;
+}
+
+#title-rouge {
+  color: #7a1735;
+}
+
+/* MEDIA QUERIES---------------------------------------------------------------------*/
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE ------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  section {
+    max-width: 90%;
+  }
+
+  .chambres__title {
+    font-size: 5em;
+  }
+
+  .chambre__title {
+    font-size: 1.3em;
+  }
+  .chambre__description {
+    font-size: 1.1em;
+  }
+  .chambre__btn {
+    font-size: 1.1em;
+    margin-left: 50%;
+  }
+}
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE -----------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .bandeau {
+    height: 1850px;
+  }
+
+  section {
+    max-width: 100%;
+  }
+
+  .chambres__title {
+    font-size: 4em;
+  }
+
+  .chambre {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center !important;
+  }
+  .chambre__img {
+    width: 100%;
+    max-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 15px;
+  }
+  .chambre__title {
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .chambre__description {
+    margin-left: 0;
+    font-size: 1em;
+  }
+  .chambre__btn {
+    display: block;
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 1em;
+  }
+}/*# sourceMappingURL=clos-chambres1.css.map */
