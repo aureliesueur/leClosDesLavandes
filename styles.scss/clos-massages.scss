@@ -80,6 +80,9 @@ body {
     align-items: flex-start;
     justify-content: center;
     position: relative;
+    &__box {
+        margin-bottom: 100px;
+    }
     &__img {
         margin-right: 20px;
     }
@@ -94,6 +97,38 @@ body {
         animation: titre2 6s ease-in-out alternate-reverse infinite;
         margin-right: 20px!important;
         margin-top: 50px;
+    }
+    &__price {
+        font-style: italic;
+    }
+    &__btn {
+        display: block;
+        margin: auto;
+    }
+    &__details {
+        position: absolute;
+        top: 110%;
+        right: 30%;
+        width: 50%;
+        border-radius:5px;
+        visibility: hidden;
+        background-color: #FFF;
+        padding: 10px;
+        font-size: 0.9em;
+        font-style: italic;
+        z-index: 10000;
+        & h3 {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        & ul {
+            margin-bottom: 0!important;
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 5%;
+        right: 5%;
     }
 }
 
@@ -180,104 +215,62 @@ body {
 /*MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE -----------------------------------------------*/
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .detente, .massages, .detente__box, .massages__box, .soins__img, .soins__description, .detente__img, .massages__img {
+        margin: 0!important;
+        margin: 0!important;
+    }
+    .soins {
+        &__img {
+            display: block;
+            margin: auto!important;
+        }
+        &__title {
+            line-height: 30px;
+            font-size:4em;
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+        &__description {
+            font-size:1em;
+            margin:40px!important;
+            & h2 {
+                font-size:1.1em;
+            }
+        }
+    }
+    .detente {
+        flex-direction: column-reverse;
+        align-items: center;
+        &__description {
+            position: static;
+        }
+        &__title {
+            animation: none;
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+    }
+    .massages {
+        flex-direction: column;
+        align-items: center;
+        &__description {
+            position: static;
+        }
+        &__title {
+            animation: none;
+            margin-right: 0px!important;
+            margin-top: 20px;
+        }
+        &__details {
+            position: absolute;
+            top: 80%;
+            right: 25%;
+            width: 50%;
+        }
+    }
 }
     
 
 
 
-
-
-
-
-/*
-
-#description_piscine
-{
-    position:absolute;
-    top:230px;
-    left:350px;
-    width:350px;
-}
-
-
-
-.titre1 {
-    position:absolute;
-    top:60px;
-    left:500px;
-    width:400px;
-    animation: titre1 6s ease-in-out alternate infinite;
-}
-
-#titre_piscine
-{   
-    font-family:Aquiline_two, Verdana, Georgia, sans-serif;
-    font-size:4.5em;
-    line-height:50px;
-}
-
-#description_massages
-{
-    position:absolute;
-    top:200px;
-    right:370px;
-    width:350px;
-}
-
-
-
-.titre2 {
-    position:absolute;
-    top:-70px;
-    right:500px;
-    width:400px;
-    
-}
-
-
-#titre_massages
-{
-    font-family:Aquiline_two, Verdana, Georgia, sans-serif;
-    font-size:4em;
-    line-height:60px;
-}
-
-
-#details_massages
-{
-    font-family:Verdana, Georgia, sans-serif;
-    font-size:0.8em;
-    font-style:italic;
-    color:rgb(80,63,110);
-    padding :10px;
-}
-
-#details_massages li
-{
-    list-style-type:none;
-}
-
-#details_massages h2
-{
-    font-size:1em;
-}
-
-button
-{
-    background-color:rgb(144,133,158);
-    border-radius:2px;
-    border:2px solid black;
-    font-family:Verdana, Georgia, sans-serif;
-    opacity:1;
-    transition: all 500ms ease-in-out;
-}
-
-button:hover {
-    transform:scale(1.1);
-}
-
-button:active {
-    opacity:0.4;
-}
-*/
 

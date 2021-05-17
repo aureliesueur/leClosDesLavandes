@@ -4,12 +4,12 @@ $tertiarycolor: rgb(108,100,126);
 $bluecolor: rgb(90,106,140);
 $greencolor: rgb(94,132,121);
 $redcolor: rgb(122,23,53);
+$boxcolor: #605e64;
 
 
 /* MENU */
 header {
     background-image: url("../images/champs2.jpg");
-    height: 200px;
     font-family: "Poppins", "Montserrat", Verdana, sans-serif;
 
 }
@@ -19,8 +19,8 @@ header {
 }
 
 .menu {
-    border:2px solid #FFF;
-    box-shadow:rgb(80,63,110) 6px 6px 10px;
+    border-bottom:2px solid #FFF;
+    box-shadow:$boxcolor 6px 6px 10px;
     &__item {
         font-size: 1.4em;
         margin-left: 30px;
@@ -60,6 +60,29 @@ header {
     }
 }
 
+/* BOUTONS */
+
+.btn-basic {
+    background-color:$tertiarycolor;
+    border:1px solid black;
+    border-radius:2px;
+    font-size:1em;
+    padding: 5px 10px;
+    color:white;
+    transform:scale(1);
+    opacity:0.8;
+    transition: all 500ms ease-in-out;
+    &:hover {
+        transform:scale(1.2,1.2);
+        opacity:1;
+    }
+    & a {
+        text-decoration:none;
+        color:white;
+    }
+}
+
+
 /* PIED DE PAGE */
 .footer {
     margin-top: 30px;
@@ -98,11 +121,16 @@ header {
 
 @media screen and (min-width : 768px) and (max-width : 1024px) {
     .navbar-light {
-        background-color: $tertiarycolor;
+        background-color: #FFF;
         z-index: 2;
     }
-    .menu a::after {
-        display: none;
+    .menu {
+        &__item>a:hover{
+            color:$primarycolor!important;  
+        }
+        & a::after {
+            display: none;
+        }
     }
     .footer__img {
         width: 15%!important;
@@ -138,6 +166,16 @@ header {
     }
 }
 
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
+
+@media screen and (min-width : 990px) and (max-width : 1024px) {
+    .navbar-light {
+        background: none;
+        z-index: 2;
+    }
+}
+
+
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE (orientation paysage)------------------------------*/
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
@@ -148,11 +186,16 @@ header {
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
     .navbar-light {
-        background-color: $tertiarycolor;
+        background-color: #FFF;
         z-index: 2;
     }
-    .menu a::after {
-        display: none;
+    .menu {
+        &__item>a:hover{
+            color:$primarycolor!important;  
+        }
+        & a::after {
+            display: none;
+        }  
     }
     .footer__box {
         display: flex;

@@ -5,12 +5,12 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script></script>
     <meta charset="utf-8">
-    <meta name="keywords" content="massages, bien-être, zen, hôtel de charme Provence">
-    <meta name="description" content="Vous êtes harassé, stressé, en manque d'énergie ? Profitez des soins et des massages de l'espace détente haut-de-gamme du Clos des Lavandes, ravissant et paisible hôtel de charme proche d'Aix-en-Provence.">
+    <meta name="keywords" content="produits locaux, gastronomie, produits provençaux, hôtel de charme Provence">
+    <meta name="description" content="Vous êtes un gourmet ? Vous aimez les produits de qualité d'origine locale, vous appréciez de découvrir les petits producteurs ? Ravissez vos papilles en découvrant les délicieux petits déjeuners et paniers-dîners concoctés par l'équipe du Clos des Lavandes, ravissant et paisible hôtel de charme proche d'Aix-en-Provence.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=4.0, user-scalable=yes">
     <meta name="robots" content="index, follow">
     <link rel="shortcut icon" type="image/png" href="img/favicon.jpg">
-    <title>Massages et soins au Clos des Lavandes</title>
+    <title>Dégustez de bons produits au Clos des Lavandes</title>
     <!-- Ajout du CDN Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Poppins&family=Open+Sans:wght@300&family=Tangerine:wght@700&family=Montserrat&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.scss/general.css">
-    <link rel="stylesheet" href="styles.scss/clos-massages.css">
+    <link rel="stylesheet" href="styles.scss/clos-resto.css">
 </head>
 
 <body>
@@ -71,51 +71,45 @@
         </div>
     </header>
 
-    <section class="soins">
-        <!--ZONE ESPACE DETENTE-->
-        <article class="detente">
-            <div class="detente__box">
-                <img src="images/piscine.jpg" alt="Photo de la piscine" class="detente__img soins__img" />
-                <div class="detente__description soins__description">
-                    <h2>Envie de vous prélasser au soleil ?</h2>
-                    <p>Notre piscine à débordement, non couverte, aux parois et fond en bois de mélèze, est réchauffée d'Avril à Octobre.<br/>L’accès y est autorisé à partir de 10h du matin. <br/>Pour que la vie soit plus simple, et vos bagages plus légers, nous vous prêtons gracieusement des peignoirs et des mules.</p>
+    <section class="resto">
+        <h1 class="resto__title">Et si l'on mangeait ?</h1>
+        <div class="resto__box">
+            <article class="resto__breakfast breakfast">
+                <h2 class="breakfast__title">Le Petit Déjeuner <br/>au Clos des Lavandes</h2>
+                <img src="images/dej.jpg" alt="Photo du petit déjeuner" class="breakfast__img">
+                <div class="breakfast__description">
+                <p>Chaque matin, pour accompagner la boisson chaude de votre choix, vous pourrez déguster une sélection de pains et de viennoiseries, crêpes du jour, cake ou sablés maison, de jus de fruits frais, de yaourts et de fruits.</p>
+                <p>Nos confitures sont <span>faites maison</span> (nos figues sont divines !), et nous ne vous laisserons pas partir sans avoir goûté notre must : la <span>crème à la lavande</span> (nous cultivons nos propres fleurs de lavande).</p>
+                <p>Ce petit déjeuner gourmand (compris dans le prix de la chambre) vous est servi <span>sur la terrasse</span> par beau temps, dans la salle à manger bucolique et chaleureuse sinon, et même <span>dans votre chambre</span> si vous désirez faire la grasse matinée (avec supplément)...</p>
                 </div>
-            </div>
-            <div class="detente__title soins__title">
-                Espace détente...
-            </div>
+            </article>
             
-        </article>
-        <!--ZONE MASSAGES-->
-        <aside class="massages">
-            <div class="massages__title soins__title">
-                Des bains...<br />Des soins...
-            </div>
-            <div class="massages__box">
-                <img src="images/massage.jpg" alt="Photo d'un massage'" class="massages__img soins__img" />
-                <div class="massages__description soins__description">
-                    <h2>Besoin de vous détendre ?</h2>
-                    <div class="massages__text">
-                        <p>Pour un séjour encore plus inoubliable, nous mettons à votre disposition, sur RDV dans votre chambre, les soins d’une somato-relaxologue. Elle vous propose différents massages adaptés à vos demandes.</p> 
-                        <p class="massages__price">Tarif : 85 €/heure pour une personne.</p>
-                        <p class="massages__price"> Cliquez ci-dessous pour plus de détails sur les massages proposés.</p>
+            <aside class="resto__divers divers">
+                <div class="divers__paniers paniers">
+                    <h2 class="paniers__title">Nos paniers-dîners</h2>
+                    <div class="paniers__box">
+                        <img src="images/panier.jpg" alt="photo du panier-dîner" class="paniers__img">
+                        <div class="paniers__description">
+                            <p>Si vous ne souhaitez pas dîner à l’extérieur, nous vous proposons, sur réservation, un panier-dîner préparé par nos soins, avec les meilleurs <span>produits du marché</span>, de notre potager et de notre verger.<br/>Fougasse, terrine maison, ratatouille, pissaladière, tomates provençales, plateau de fromages, tarte à la figue, fromage blanc fermier avec les fruits rouges du jardin, etc... Selon la saison, nous vous composons un petit dîner simple pour vous faire découvrir ou redécouvrir les saveurs authentiques des produits du terroir.</p>
+                        </div> 
                     </div>
-                    <button class="massages__btn btn-basic" id="btn_massages">En savoir plus</button>
+                    <p class="paniers__tarif"><span>Tarif : 20 € par personne (hors boissons) - Menu enfant 10 €.</span></p> 
                 </div>
-                <div class="massages__details" id="details_massages">
-                    <h3>Massages proposés</h3>
-                    <i class="fas fa-times massages__close" id="closeicon"></i>
-                    <ul>
-                        <li>Massage Ayurvédique (huiles de massage "Les Cinq Mondes") : bien-être et énergie.</li>
-                        <li>Massage Californien : relaxation psychique et physique.</li>
-                        <li>Massage Chinois : drainage, vitalité et détente.</li> 
-                    </ul>
+                
+                <div class="divers__apero apero">
+                    <h2 class="apero__title">Nos apéritifs</h2>
+                    <div class="apero__box">
+                        <div class="apero__description">
+                            <p>Et si votre désir est tout simplement de siroter un verre de bon vin sur la terrasse, pour admirer le soleil qui descend doucement au-dessus des champs de lavande, nous vous proposons boissons alcoolisées ou non (carte des vins et apéritifs disponible sur place) et <span>produits apéritifs locaux</span> (tapenade maison).</p>
+                        </div>  
+                        <img src="images/apero.jpg" alt="photo de l'apéro" class="apero__img">
+                    </div>
                 </div>
-            </div>
-    
-            
-        </aside> 
+            </aside>
+        </div>
     </section>
+      
+   
 
     <!--PIED DE PAGE-->
     <footer class="footer container-fluid">
@@ -155,7 +149,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/clos-massages.js"></script>
+    <script src="js/clos-resto.js"></script> 
 </body>
 
 </html>

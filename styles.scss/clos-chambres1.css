@@ -65,22 +65,6 @@ section {
 .chambre__btn {
   margin-left: 60%;
   margin-bottom: 20px;
-  background-color: #6c647e;
-  border: 1px solid black;
-  border-radius: 2px;
-  font-size: 1.2em;
-  color: white;
-  transform: scale(1);
-  opacity: 0.8;
-  transition: all 500ms ease-in-out;
-}
-.chambre__btn:hover {
-  transform: scale(1.2, 1.2);
-  opacity: 1;
-}
-.chambre__btn a {
-  text-decoration: none;
-  color: white;
 }
 
 #title-bleu {
