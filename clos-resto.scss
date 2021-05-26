@@ -1,0 +1,163 @@
+
+
+
+
+
+/*body
+{
+    background-color:rgb(199,198,200);
+    font-family:Verdana, Georgia, Arial, sans-serif;
+    font-size:0.8em;
+}
+
+section
+{
+    background:url("images/figues.jpg") no-repeat fixed; 
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    margin:50px;
+}
+
+h1
+{
+    font-family:Aquiline_two, Verdana, Georgia, sans-serif;
+    font-size:4.5em;
+    line-height:40px;
+    margin-top:10px;
+}
+
+h2
+{
+    font-family:Caviar_dreams, Verdana, Georgia, sans-serif;
+    font-size:1.8em;
+    text-align:center;
+}
+
+#resto
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:flex-start;
+}
+
+#petitdej, #divers
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    border:2px solid white;
+    border-radius:3px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+#petitdej
+{
+      margin-left:40px;
+      margin-right:40px;
+}
+
+#photo_dej
+{
+    display:block;
+    max-width:100%;
+    border:2px solid black;
+    border-radius:2px;
+}
+
+#divers
+{
+    margin-right:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+#description, #panier, #apero
+{
+    font-family: Verdana, Georgia, sans-serif;
+    font-size:1.2em;
+    text-align:justify;
+
+}
+
+h2
+{
+    font-family: Caviar_dreams, Verdana, Georgia, sans-serif;
+    text-shadow: white 2px 2px 3px;
+    font-size:1.8em;
+}
+
+h3
+{
+    font-family: Caviar_dreams, Verdana, Georgia, sans-serif;
+    text-shadow: white 2px 2px 3px;
+    font-size:1.3em;
+}
+
+#aperitifs
+{
+    border-top:6px solid white;
+    margin-top:20px;
+}
+
+#photo_panier, #photo_apero
+{
+    border:2px solid black;
+    border-radius:3px;
+}
+
+#panier
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#description_panier
+{
+    padding-left:20px;
+}
+
+#apero
+{
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#description_apero
+{
+    padding-right:20px;
+}
+
+span
+{
+    font-style:italic;
+}
+
+#tarif
+{
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

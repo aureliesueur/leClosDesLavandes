@@ -13,6 +13,7 @@ header {
     font-family: "Poppins", "Montserrat", Verdana, sans-serif;
 
 }
+
 #logo {
     display: block;
     margin: auto;
@@ -23,6 +24,7 @@ header {
     box-shadow:$boxcolor 6px 6px 10px;
     &__item {
         font-size: 1.4em;
+        text-transform: uppercase;
         margin-left: 30px;
         display: inline-flex;
         & a {
@@ -50,6 +52,7 @@ header {
     }
     &__sousmenu {
         background-color: $secondarycolor;
+        text-transform: none;
         & a:hover {
             background-color: $secondarycolor;
             color: #FFF; 
@@ -82,6 +85,26 @@ header {
     }
 }
 
+/* RESEAUX SOCIAUX */@at-root
+
+.sociallist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 0;
+    &__social a {
+        color: #000!important;
+        font-size: 2em;
+        &:hover {
+            color: #FFF!important;
+        }
+    }
+}
 
 /* PIED DE PAGE */
 .footer {
@@ -97,12 +120,15 @@ header {
         list-style-type: none;
         padding-left: 0!important;
     }
+    &__links li, &__coord li {
+        margin-bottom: 5px;
+    }
     &__links a, &__coord a {
         color: rgb(199,198,200);
         &:hover {
             font-weight: bold;
             text-decoration: none;
-        }    
+        } 
     }
     & h3 {
         color: rgb(80,63,110);
@@ -111,8 +137,13 @@ header {
     &__img {
         object-fit: contain;
     }
-
+    &__icon {
+        font-size: 1.5em!important;
+        margin-right: 5px;
+    }  
 }
+
+ 
 
 /* MEDIA QUERIES---------------------------------------------------------------------*/
 

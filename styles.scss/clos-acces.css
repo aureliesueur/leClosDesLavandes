@@ -1,0 +1,196 @@
+.menu {
+  box-shadow: none !important;
+}
+
+body {
+  background-color: #2d233d;
+  font-family: "Poppins", "Montserrat", Verdana, sans-serif;
+  color: #FFF;
+  font-size: 0.8em;
+}
+
+.acces {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 60px;
+}
+.acces__infos, .acces__divers {
+  flex: 1 !important;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.acces__infos {
+  margin-right: 50px;
+}
+
+.infos__title {
+  font-family: "Bilbo Swash Caps", "Tangerine", Verdana, sans-serif;
+  font-size: 2.5em;
+  color: #000;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+.infos__email {
+  text-decoration: none;
+  color: #FFF;
+}
+.infos__email:hover {
+  text-decoration: underline;
+  color: #503f6e;
+}
+.infos span {
+  font-weight: bold;
+  color: #000;
+  text-shadow: #605e64 1px 1px 2px;
+}
+.infos__coord, .infos__transport {
+  background-color: #C0C0C0;
+  border: 2px white solid;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 20px;
+  font-size: 1.2em;
+}
+.infos__coord {
+  margin-bottom: 30px;
+}
+
+.meteo {
+  text-align: center;
+}
+.meteo__title {
+  color: #FFF;
+  font-size: 1.2em;
+  font-style: italic;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 2px #FFF;
+}
+.meteo__title a {
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  background-color: #6c647e;
+  padding: 2px 4px;
+  border: 1px solid #000;
+  color: #FFF;
+  border-radius: 2px;
+  line-height: 30px;
+}
+.meteo__title a:hover {
+  border: 2px solid #FFF;
+  box-shadow: 2px #FFF;
+}
+.meteo__btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url("../images/ciel.jpg");
+  border: 2px solid #FFF;
+  border-radius: 2px;
+  height: 100px;
+  width: 250px;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.divers__title {
+  font-family: "Bilbo Swash Caps", "Tangerine", Verdana, sans-serif;
+  font-size: 4em;
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 30px;
+  -webkit-animation: ecriture 2s ease-in-out;
+          animation: ecriture 2s ease-in-out;
+}
+.divers__map {
+  width: 100%;
+  border: 2px solid #FFF;
+  border-radius: 4px;
+}
+
+/* Animation citation */
+@-webkit-keyframes ecriture {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes ecriture {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+/* MEDIA QUERIES---------------------------------------------------------------------*/
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .acces {
+    margin: 40px 70px;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .acces__infos {
+    margin-right: 0px;
+  }
+
+  .infos__title {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+
+  .meteo__title {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+  }
+  .meteo__btn {
+    margin-top: 0px;
+  }
+
+  .divers__map {
+    margin-bottom: 30px;
+  }
+}
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE (orientation paysage)------------------------------*/
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE -----------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .acces {
+    margin: 40px 20px;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .acces__infos {
+    margin-right: 0px;
+  }
+
+  .infos__title {
+    font-size: 2.1em;
+    margin-bottom: 30px;
+  }
+  .infos__coord, .infos__transport {
+    font-size: 1.1em !important;
+  }
+
+  .meteo__title {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+  }
+  .meteo__btn {
+    margin-top: 0px;
+  }
+
+  .divers__map {
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=clos-acces.css.map */

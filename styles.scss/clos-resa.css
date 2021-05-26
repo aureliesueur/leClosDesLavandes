@@ -1,0 +1,246 @@
+/* GENERAL PAGE */
+body {
+  background-color: #c7c6c8;
+  font-family: "Poppins", "Montserrat", Verdana, sans-serif;
+  font-size: 0.9em;
+}
+
+section {
+  margin: 50px 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* BANDEAUX LATERAUX */
+.bandeau {
+  background-color: #6c647e;
+  width: 70px;
+  height: 1300px;
+}
+
+.form {
+  padding: 30px;
+  max-width: 70%;
+  margin: auto;
+  margin-top: 0;
+  text-align: center;
+}
+.form__title {
+  font-family: "Kristi", "Bilbo Swash Caps", "Tangerine", Verdana, sans-serif;
+  font-size: 4em;
+  line-height: 45px;
+  margin-bottom: 30px;
+}
+.form__subtitle {
+  font-size: 1.5em;
+  text-shadow: #605e64 1px 1px 2px;
+  color: #503f6e;
+  margin-bottom: 30px;
+}
+.form__section {
+  border: 1px solid #503f6e;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.form__chapter {
+  font-size: 1.5em;
+  text-shadow: #503f6e 1px 1px 2px;
+  font-style: italic;
+  color: white;
+  text-align: left;
+  width: auto;
+}
+.form__item {
+  width: 100%;
+  margin: auto;
+}
+.form__item label {
+  text-align: left;
+  width: 40%;
+}
+.form__item input {
+  width: 50%;
+  text-align: right;
+  font-style: italic;
+  font-size: 0.8em !important;
+  color: #605e64 !important;
+}
+.form__item2 {
+  margin-bottom: 20px !important;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.form__item2 label {
+  align-self: flex-start;
+}
+.form__item2 select, .form__item2 textarea {
+  font-style: italic;
+  font-size: 0.8em !important;
+  color: #605e64 !important;
+}
+.form__item2 select {
+  background-color: #fff;
+}
+.form__item2 textarea {
+  max-width: 100%;
+}
+.form__submit::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: green;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+}
+.form__submit:hover::after {
+  opacity: 1;
+}
+.form__submitbox {
+  position: relative;
+}
+.form__msg {
+  background-color: #FFF;
+  border-radius: 5px;
+  border: 1px solid #FF0000;
+  width: 50%;
+  padding: 10px;
+  margin-top: 20px;
+  color: #503f6e;
+  position: absolute;
+  bottom: 0;
+  margin-left: 25%;
+  visibility: hidden;
+}
+
+/*
+
+/* MEDIA QUERIES---------------------------------------------------------------------*/
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section {
+    margin: 40px 10%;
+  }
+
+  .bandeau {
+    width: 50px;
+    height: 1200px;
+  }
+
+  .form {
+    padding: 20px;
+    max-width: 80%;
+  }
+  .form__title {
+    font-size: 3.3em;
+  }
+  .form__subtitle {
+    font-size: 1.2em;
+  }
+}
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE -----------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  body {
+    font-size: 0.8em;
+  }
+
+  section {
+    margin: 40px 0;
+  }
+
+  .bandeau {
+    width: 40px;
+    height: 1300px;
+  }
+
+  .form {
+    padding: 20px;
+    max-width: 90%;
+  }
+  .form__title {
+    font-size: 3em;
+  }
+  .form__subtitle {
+    font-size: 1.1em;
+  }
+  .form__chapter {
+    font-size: 1.1em;
+  }
+  .form__section {
+    padding: 0 0 10px 0;
+  }
+  .form__item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .form__item label {
+    width: 60%;
+    text-align: center;
+  }
+  .form__item input {
+    width: 60%;
+  }
+  .form__item2 {
+    padding: 10px;
+  }
+  .form__item2 label {
+    text-align: center;
+  }
+  .form__msg {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+@-webkit-keyframes headshake {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-20px);
+  }
+}
+@keyframes headshake {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-20px);
+  }
+}
+#nom, #prenom, #email, #telephone, #depart, #arrivee {
+  outline: none !important;
+}
+#nom:focus, #prenom:focus, #email:focus, #telephone:focus, #depart:focus, #arrivee:focus {
+  border: 2px solid #503f6e;
+}
+
+#email:not(:focus):invalid {
+  color: white;
+  border: 2px solid #94022c;
+  -webkit-animation: headshake 100ms ease-in-out 2;
+          animation: headshake 100ms ease-in-out 2;
+}
+
+.chambrechoisie:active {
+  background-color: #503f6e !important;
+}/*# sourceMappingURL=clos-resa.css.map */

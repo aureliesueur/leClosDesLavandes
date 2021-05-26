@@ -1,0 +1,225 @@
+﻿<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script></script>
+    <meta charset="utf-8">
+    <meta name="keywords" content="réservation, planning, bon rapport qualité prix, hôtel de charme Provence">
+    <meta name="description"
+        content="Vous souhaitez plannifier un séjour au Clos des Lavandes, ravissant et paisible hôtel de charme proche d'Aix-en-Provence ? Vous avez une question, un doute, une demande spécifique à nous faire ? N'hésitez pas à nous en faire part.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=4.0, user-scalable=yes">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.jpg">
+    <title>Demande d'information et formulaire de contact du Clos des Lavandes</title>
+    <!-- Ajout du CDN Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Ajout des Google Fonts et des icônes Fontawesome-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Poppins&family=Open+Sans:wght@300&family=Tangerine:wght@700&family=Montserrat&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.scss/general.css">
+    <link rel="stylesheet" href="styles.scss/clos-resa.css">
+</head>
+
+<body>
+    <!--MENU-->
+    <header>
+        <div class="container-fluid">
+            <img src="images/logo.png" alt="Logo du Clos des Lavandes" width="120"
+                class="navbar-brand img-thumbnail img-fluid menu__img" id="logo">
+            <div class="row">
+                <nav class="col navbar navbar-expand-lg navbar-light justify-content-center menu">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active menu__item"><a class="nav-link"
+                                    href="clos-accueil.html">Accueil</a></li>
+                            <li class="nav-item dropdown menu__item"><a class="nav-link dropdown-toggle" href="#"
+                                    id="dropdownMenuChambres" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">Chambres <i class="fas fa-caret-down"></i></a>
+                                <div class="dropdown-menu menu__sousmenu" aria-labelledby="dropdownMenuChambres">
+                                    <a class="dropdown-item " href="clos-chambres.html">Toutes nos chambres</a>
+                                    <a class="dropdown-item " href="clos-chambre-bleue.html">Chambre Bleue</a>
+                                    <a class="dropdown-item" href="clos-chambre-verte.html">Chambre Verte</a>
+                                    <a class="dropdown-item" href="clos-chambre-rouge.html">Chambre Rouge</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown menu__item"><a class="nav-link dropdown-toggle"
+                                    href="clos-services.html" id="dropdownMenuServices" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services <i
+                                        class="fas fa-caret-down"></i></a>
+                                <div class="dropdown-menu menu__sousmenu" aria-labelledby="dropdownMenuServices">
+                                    <a class="dropdown-item" href="clos-resto.html">Restauration</a>
+                                    <a class="dropdown-item" href="clos-massages.html">Espace détente</a>
+                                    <a class="dropdown-item" href="clos-afaire.html">A voir et à faire</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown menu__item"><a class="nav-link dropdown-toggle" href="#"
+                                    id="dropdownMenuResa" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">Tarifs/Réservation <i class="fas fa-caret-down"></i></a>
+                                <div class="dropdown-menu menu__sousmenu" aria-labelledby="dropdownMenuResa">
+                                    <a class="dropdown-item" href="clos-tarifs.html">Prix des chambres</a>
+                                    <a class="dropdown-item" href="clos-resa.html">Réservation</a>
+                                </div>
+                            </li>
+                            <li class="nav-item menu__item"><a class="nav-link menu__last" href="clos-galerie.html">Galerie</a></li>
+
+                            <li class="nav-item dropdown menu__item"><a class="nav-link dropdown-toggle" href="#"
+                                    id="dropdownMenuInfos" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">Infos pratiques <i class="fas fa-caret-down"></i></a>
+                                <div class="dropdown-menu menu__sousmenu" aria-labelledby="dropdownMenuInfos">
+                                    <a class="dropdown-item" href="clos-acces.html">Accès</a>
+                                    <a class="dropdown-item" href="clos-contact.html">Contact</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="bandeau">
+        </div>
+
+        <article class="form">
+            <h1 class="form__title">Vous souhaitez séjourner au Clos des Lavandes ?</h1>
+            <h2 class="form__subtitle">Merci de préciser votre requête en remplissant ce court formulaire, vous recevrez une réponse dans les plus brefs délais.</h2>
+            
+            <form class="form__box" method="post" action="traitement.php">
+                <fieldset class="form__section">
+                    <legend class="form__chapter">Vos informations personnelles</legend>
+
+                    <div class="form__item">
+                        <label for="nom">Votre nom : </label>
+                        <input type="text" id="nom" name="nom" required placeholder="Par ex : Martignac..." />
+                    </div>
+                    <div class="form__item">
+                        <label for="prenom">Votre prénom : </label>
+                        <input type="text" id="prenom" name="prenom" required placeholder="Par ex : Justine..." />
+                    </div>
+                    <div class="form__item">
+                        <label for="telephone">Votre numéro de téléphone : </label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="06 00 11 22 33" />
+                    </div>
+                    <div class="form__item">
+                        <label for="email">Votre adresse email : </label>
+                        <input type="email" id="email" name="email" placeholder="justine.martignac@orange.fr" />
+                    </div>
+                </fieldset>
+
+                <fieldset class="form__section">
+                    <legend class="form__chapter">Vos dates de séjour</legend>
+                    
+                    <div class="form__item">
+                        <label for="arrivee">Votre date d'arrivée : </label>
+                        <input type="date" id="arrivee" name="arrivee" required />
+                    </div>
+                    <div class="form__item">
+                        <label for="depart">Votre date de départ : </label>
+                        <input type="date" id="depart" name="départ" required />
+                    </div>
+                </fieldset>
+
+                <fieldset class="form__section">
+                    <legend class="form__chapter">Vos préférences</legend>
+
+                    <div class="form__item2">
+                        <label for="chambre">Dans quelle chambre souhaiteriez-vous séjourner (sous réserve de disponibilité) ?</label>
+                        <select name="chambre" id="chambre">
+                            <option class="chambrechoisie" value="bleue">Chambre Bleue</option>
+                            <option class="chambrechoisie" value="jaune">Chambre Verte</option>
+                            <option class="chambrechoisie" value="rouge">Chambre Rouge</option>
+                            <option class="chambrechoisie" value="peuimporte" selected>Toutes les chambres me conviennent</option>
+                        </select>
+                    </div>
+                    <div class="form__item2">
+                        <label for="lit">Souhaitez-vous un lit supplémentaire dans la chambre ?</label>
+                        <select name="lit" id="lit">
+                            <option value="oui">Oui</option>
+                            <option value="non" selected>Non merci</option>
+                        </select>
+                    </div>
+                    <div class="form__item2">
+                        <label for="questions">Avez-vous une remarque ou une question particulière ?</label>
+                        <textarea rows="10" cols="30">Nous sommes ouverts à toutes les requêtes !</textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form__submitbox">
+                    <input class="form__submit btn-basic" type="submit" value="Transmettre ces informations" />
+                    <div class="form__msg" id="submit">Votre demande a bien été transmise.<br/>Merci de votre intérêt pour le Clos des Lavandes.</div>
+                </div>
+
+            </form>
+        </article>
+
+        <div class="bandeau">
+        </div>
+
+    </section>
+
+
+    <!--PIED DE PAGE-->
+    <footer class="footer container-fluid">
+        <div class="row footer__box">
+            <div class="col-12  col-md-2 footer__socialList">
+                <div class="footer__social">
+                    <a class="btn btn-outline-light btn-floating social" role="button" href="https://twitter.com/"
+                        title="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="footer__social">
+                    <a class="btn btn-outline-light btn-floating social" href="https://www.facebook.com/"
+                        title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="footer__social">
+                    <a class="btn btn-outline-light btn-floating social" href="https://www.instagram.com/"
+                        title="Instagram"><i class="fab fa-instagram-square"></i></a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 footer__links" role="navigation" aria-label="footer navigation">
+                <h3>Partenaires</h3>
+                <ul>
+                    <li><i class="fas fa-info-circle footer__icon"></i><a href="tourisme-en-provence.com"> Informations
+                            touristiques</a></li>
+                    <li><i class="fas fa-car footer__icon"></i><a href="mycar.com"> Location de voiture</a></li>
+                    <li><i class="fas fa-bicycle footer__icon"></i><a href="velofacile.com"> Location de vélos</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 footer__coord">
+                <h3>Coordonnées</h3>
+                <ul>
+                    <li><i class="far fa-envelope footer__icon"></i><a href="mailto:contact@leclosdeslavandes.com">
+                            Email : contact@leclosdeslavandes.com</a></li>
+                    <li><i class="fas fa-map-marker-alt footer__icon"></i> Adresse : XXXXXXX</li>
+                    <li><i class="fas fa-phone-square footer__icon"></i> Téléphone : XX XX XX XX</li>
+                </ul>
+            </div>
+            <img src="images/logopetit.png" alt="Logo du Clos des Lavandes"
+                class="col-4 col-md-2 img-thumbnail img-fluid footer__logo" width="50">
+    </footer>
+
+    <!-- Ajout des composants permettant l'utilisation de Bootstrap : jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/clos-resa.js"></script>
+</body>
+
+</html>
